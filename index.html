@@ -3,34 +3,51 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Mein Portfolio</title>
+    <title>Mein Portfolio – Startseite</title>
     <link rel="stylesheet" href="style.css" />
   </head>
-
   <body>
-    <header>
-      <h1>Willkommen auf meiner Portfolio-Website.</h1>
+    <!-- Navigation -->
+    <nav class="navbar">
+      <div class="nav-brand">Mein Portfolio</div>
+      <ul class="nav-links">
+        <!-- Verweise auf andere HTML-Seiten -->
+        <li><a href="index.html">Startseite</a></li>
+        <li><a href="about.html">Über mich</a></li>
+        <li><a href="projects.html">Projekte</a></li>
+        <li><a href="contact.html">Kontakt</a></li>
+      </ul>
+    </nav>
+
+    <!-- Header / Hero-Bereich -->
+    <header class="hero">
+      <h1>Willkommen auf meiner Webseite</h1>
+      <p>Dies ist meine Startseite.</p>
+      <button id="colorBtn">Farbmodus wechseln</button>
     </header>
 
-    <main>
-      <section>
-        <h2>About me:</h2>
-        <p>
-          Momentan eigne ich mir viele technische Skills an. Mein Gehirn ist wie
-          ein trockener Schwamm.
-        </p>
-      </section>
-      <section>
-        <h2>Schulprojekte</h2>
-        <p>
-          Bachelorthesis: Cloud Computing im öffenltichen Sektor Modulabschluss:
-          EWEB & SPM2 Zertifizierung: SAP
-        </p>
-      </section>
-    </main>
+    <!-- Hauptinhalt der Startseite -->
+    <section class="section">
+      <img src="bilder/DSC_6295.JPG" alt="Mein Foto" class="portrait" />
+      <h2>Hallo Besucher !</h2>
+      <p>
+        Mein Name ist Rahul Vadackumchery. Ich studiere Wirtschaftsinformatik an
+        der Berner Fachhochschule.
+      </p>
 
-    <footer>
-      <p>&copy; 21. Nov Rahul</p>
+      <p>Im Modul EWEB mit Syrian Hadid erstelle ich meine erste Webseite.</p>
+
+      <p>
+        Nutze die Navigation oben rechts, um mehr über mich zu erfahren, meine
+        Projekte anzusehen oder mich zu kontaktieren. Lets Go
+      </p>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <p>© 2024 Rahul V. Alle Rechte vorbehalten.</p>
     </footer>
+
+    <script src="script.js"></script>
   </body>
 </html>

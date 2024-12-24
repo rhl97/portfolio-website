@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mein Portfolio – Kontakt</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Navigation -->
+    <nav class="navbar">
+      <div class="nav-brand">Mein Portfolio</div>
+      <ul class="nav-links">
+        <li><a href="index.html">Startseite</a></li>
+        <li><a href="about.html">Über mich</a></li>
+        <li><a href="projects.html">Projekte</a></li>
+        <li><a href="contact.html">Kontakt</a></li>
+      </ul>
+    </nav>
+
+    <!-- Hero-Bereich -->
+    <header class="hero" id="contact-hero">
+      <h1>Kontaktiere mich</h1>
+      <button id="colorBtn">Farbmodus wechseln</button>
+    </header>
+
+    <!-- Kontaktformular-Bereich -->
+    <section class="contact-section">
+      <h2>Kontaktformular</h2>
+      <p>
+        Falls du Fragen hast oder mit mir in Kontakt treten möchtest, nutze
+        gerne dieses Formular:
+      </p>
+
+      <form class="contact-form" action="#" method="post">
+        <label for="name">Name:</label>
+        <input
+          type="text"
+          id="name"
+          name="name"
+          placeholder="Dein Name"
+          required
+        />
+
+        <label for="email">E-Mail:</label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="Deine E-Mail-Adresse"
+          required
+        />
+
+        <label for="message">Nachricht:</label>
+        <textarea
+          id="message"
+          name="message"
+          rows="5"
+          placeholder="Deine Nachricht"
+        ></textarea>
+
+        <button type="submit">Abschicken</button>
+
+          <!-- Grün eingefärbte Erfolgsmeldung, anfangs versteckt -->
+        <div id="success-message" style="display: none; color: green; margin-top: 1rem;">
+            Nachricht wurde erfolgreich verschickt!
+
+
+
+
+      </form>
+    </section>
+
+    <!-- Alternative Kontaktinfos -->
+    <section class="section contact-info">
+      <h2>Oder melde dich direkt</h2>
+      <p>
+        Du kannst mich auch direkt über E-Mail, Telefon oder Postweg erreichen:
+      </p>
+      <ul>
+        <li><strong>Name:</strong> Rahul Vadackumchery</li>
+        <li><strong>Adresse:</strong> Thunstrasse 25B, Spiez 3700</li>
+        <li>
+          <strong>E-Mail:</strong>
+          <a href="mailto:rahul.vadackumchery@gmail.com"
+            >rahul.vadackumchery@gmail.com</a
+          >
+        </li>
+        <li><strong>Telefon:</strong> +41 76 530 61 69</li>
+      </ul>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <p>© 2024 Rahul V. Alle Rechte vorbehalten.</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
