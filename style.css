@@ -161,95 +161,46 @@ body {
   color: #666;
 }
 
-/* ... dein bisheriges CSS ... */
-
-/* Intro-Text oberhalb der Galerie */
-.intro-text {
-  text-align: center;
-  max-width: 700px;
-  margin: 0 auto 2rem;
-  font-size: 1.1rem;
-}
-
-/* Grid-Galerie */
-.life-grid {
-  display: grid;
-  /* 2 Spalten (oder 3), die sich an die Bildschirmbreite anpassen */
-  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-  gap: 1.5rem;
-  margin-top: 2rem;
-  justify-items: center; /* Bilder mittig ausrichten */
-}
-
-/* Jeder figure-Block */
-.life-grid figure {
-  background-color: #fff;
-  border-radius: 0.3rem;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  overflow: hidden;
-  max-width: 300px; /* optional: begrenze die Breite */
-  text-align: center;
-}
-
-/* Galerie-Bilder */
-.life-grid img {
-  width: 100%;
-  display: block;
-  object-fit: cover;
-}
-
-/* Bildunterschrift */
-.life-grid figcaption {
-  padding: 0.8rem;
-  font-size: 0.95rem;
-  color: #555;
-}
-
-/* ---------------------------------------
-   Kontakt-Hintergrund / Hero
---------------------------------------- */
-/* Optional: neues ID-Attribut #contact-hero
-   --> siehe <header> im contact.html */
+/************************************
+ * 1) Hero-Bereich (Kontakt-Seite)
+ ************************************/
 #contact-hero {
-  background: url("bilder/meinHintergrund.jpg") center/cover no-repeat;
+  background-color: #063752; /* Dein dunkles Blau */
   color: #fff;
   text-align: center;
-  padding: 4rem 1rem;
+  padding: 3rem 1rem;
+  /* Wenn du möchtest, kannst du hier noch was ergänzen:
+     e.g. background-image, etc. */
 }
 
-/* ---------------------------------------
-       Kontaktformular-Bereich
-    --------------------------------------- */
+/************************************
+ * 2) Kontaktformular als "Card"
+ ************************************/
 .contact-section {
-  background-color: rgba(
-    255,
-    255,
-    255,
-    0.9
-  ); /* halbtransparenter weißer Hintergrund */
+  /* Weißer Container, zentriert, mit Schatten */
+  background-color: #fff;
   max-width: 600px;
-  margin: -3rem auto 2rem; /* rutscht leicht über das Hero-Bild */
+  margin: -3rem auto 2rem; /* "hebt" sich ein Stück vom hero ab */
   padding: 2rem;
   border-radius: 0.5rem;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
 }
 
-/* Überschrift und Erklärungstext */
+/* Überschriften und Beschreibung */
 .contact-section h2 {
   text-align: center;
   margin-bottom: 1rem;
 }
-
 .contact-section p {
   text-align: center;
   margin-bottom: 2rem;
 }
 
-/* Das Formular selbst */
+/* Formular-Layout */
 .contact-form {
   display: flex;
   flex-direction: column;
-  gap: 1rem;
+  gap: 1rem; /* Abstand zwischen den Feldern */
 }
 
 .contact-form label {
@@ -266,18 +217,11 @@ body {
   width: 100%;
 }
 
-.contact-form input:focus,
-.contact-form textarea:focus {
-  outline: none;
-  border-color: #999;
-}
-
-/* Button für das Formular */
 .contact-form button[type="submit"] {
-  background-color: #8b0000; /* dunkles Rot, z.B. */
+  background-color: #8b0000; /* dunkles Rot */
   color: #fff;
   font-size: 1rem;
-  padding: 0.8rem;
+  padding: 0.8rem 1.2rem;
   border: none;
   border-radius: 0.3rem;
   cursor: pointer;
@@ -287,21 +231,22 @@ body {
   background-color: #b22222; /* etwas helleres Rot */
 }
 
-/* ---------------------------------------
-       Alternative Kontaktinfos
-    --------------------------------------- */
+/************************************
+ * 3) Kontaktinfos unten
+ ************************************/
 .contact-info {
+  /* leichter grauer Container */
   max-width: 600px;
   margin: 0 auto 2rem;
-  padding: 2rem 1rem;
-  background-color: #f3f3f3; /* leichter Grau-Hintergrund */
+  padding: 2rem;
+  background-color: #f3f3f3;
   border-radius: 0.3rem;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .contact-info h2 {
-  margin-bottom: 1rem;
   text-align: center;
+  margin-bottom: 1rem;
 }
 
 .contact-info ul {
@@ -312,4 +257,47 @@ body {
 
 .contact-info li {
   margin-bottom: 0.5rem;
+}
+
+/*************************************
+ * Galerie-Einleitung
+ *************************************/
+.intro-text {
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto 2rem;
+  font-size: 1.1rem;
+}
+
+/*************************************
+ * Grid-Galerie
+ *************************************/
+.life-grid {
+  display: grid;
+  /* auto-fill + minmax => responsive Spalten */
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
+  justify-items: center; /* Bilder mittig ausrichten */
+}
+
+.life-grid figure {
+  background-color: #fff;
+  border-radius: 0.3rem;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  max-width: 300px; /* Begrenze die Breite */
+  text-align: center;
+}
+
+.life-grid img {
+  width: 100%;
+  display: block;
+  object-fit: cover; /* Bei Bedarf kannst du object-fit anpassen */
+}
+
+.life-grid figcaption {
+  padding: 0.8rem;
+  font-size: 0.95rem;
+  color: #555;
 }
